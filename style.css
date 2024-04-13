@@ -1,0 +1,462 @@
+html {
+    font-family: 'Figtree', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background:black;
+    color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+}
+
+nav ul li a::after {
+    content:'';
+    width: 0%;
+    height: 3px;
+    background: lightskyblue;
+    position: absolute;
+    left: 0;   
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+ .headerText {
+    margin-top: 20%;
+    font-size: 1.5rem;
+ }
+
+ .headerText h1 {
+    font-size: 2.0rem;
+    margin-top: 20px;
+ }
+
+ .headerText h1 span {
+    color: lightskyblue;
+ }
+
+.logo {
+    width: 25%;
+    /*height: 100%*/
+    /*margin-bottom: 50px;*/
+}
+
+.menuContainer {
+    padding: 10px 10%;
+}
+
+#header {
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+    /*background-image: url(Resources/background.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed*/
+}
+/*---------------ABOUT ME---------------*/
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.aboutCol1 {
+    flex-basis: 35%;
+    background-color: rgb(43, 42, 42);
+    border-radius: 15px;
+}
+
+.aboutCol1 img {
+    width: 190%;
+    height: 100%;
+}
+
+.aboutCol2{
+    flex-basis: 60%;
+}
+
+.aboutHeading {
+    font-size: 2.5rem;
+}
+
+.aboutCol2 p {
+    font-weight: 300;
+}
+
+.aboutTabs {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.aboutLinks {
+    margin-right: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.aboutLinks::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: lightskyblue;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.aboutLinks.activateLink::after {
+    width: 50%;
+}
+
+.tabContent ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tabContent ul li span {
+    color: lightskyblue;
+    font-size: 14px;
+}
+
+.tabContent {
+    display: none;
+}
+
+.tabContent.activateTab {
+    display: block;
+}
+
+.aboutContainer {
+    padding: 10px 10%;
+}
+
+#aboutMe {
+    padding: 80px 0;
+    margin-top: 180px;
+}
+/*---------------MY SERVICES---------------*/
+
+.servicesHeading {
+    font-size: 2.5rem;
+}
+
+.servicesList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.servicesList div {
+    background: gray;
+    padding: 40px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: backround 0.5s, transform 0.5s;
+}
+
+.servicesList div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.servicesList div h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.servicesList div a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.servicesList div:hover {
+    background: lightskyblue;
+    transform: translateY(-10px);
+}
+
+.servicesContainer {
+    padding: 10px 10%;
+}
+
+#myServices {
+    padding: 30px 0;
+}
+/*---------------MY PORTFOLIO---------------*/
+
+.portfolioHeading {
+    font-size: 2.5rem;
+}
+.workList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    }
+    
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), lightskyblue);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20PX;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: lightskyblue;
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 60px;
+    background: whitesmoke;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform:scale(1.1) ;
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.workButton {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid lightskyblue;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: background 0.5s;
+}
+
+.workButton:hover{
+    background: lightskyblue;
+}
+
+.portfolioContainer {
+    padding: 10px 10%;
+}
+
+#myPortfolio {
+    padding: 50px 0;
+}
+/*---------------Contact Me---------------*/
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: rgb(43, 42, 42);
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 6px;
+}
+
+.contactHeading {
+    font-size: 2.5rem;
+}
+
+.contactLeft {
+    flex-basis: 35%;
+}
+
+.contactRight {
+    flex-basis: 60%;
+}
+
+.contactLeft p {
+    margin-top: 30px;
+}
+
+.contactLeft p i {
+    color: lightskyblue;
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+.socialMedia {
+    margin-top: 30px;
+}
+
+.socialMedia a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: lightgray;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.socialMedia a:hover {
+    color: lightskyblue;
+    transform: translateY(-5px);
+}
+
+.workButton.contactButton {
+    display: inline-block;
+    background: lightskyblue;
+}
+
+.contactButton {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contactRight form {
+    width: 100%;
+}
+
+.contactContainer {
+    padding: 10px 10%;
+}
+
+#contactMessage {
+    color: rgb(120, 247, 94);
+    margin-top: -40px;
+    display: block;
+}
+
+/*---------------Media Query---------------*/
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    /*#header {
+
+    }*/
+.logo {
+    width: 75%;
+}
+
+
+.headerText {
+    margin-top: 100%;
+    font-size: 16px;
+}
+
+.headerText h1 {
+    font-size: 30px;
+}
+
+nav .fa-solid {
+    display: block;
+    font-size: 25px;
+}
+
+/*nav .fa-solid.fa-bars {
+    float: right;
+}*/
+
+nav ul {
+    background: lightskyblue;
+    position: fixed;
+    top: 0;
+    right: -230px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+
+nav ul li {
+    display: block;
+    margin: 25px;
+}
+
+nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+
+.aboutCol1, .aboutCol2 {
+    flex-basis: 100%;
+}
+
+.aboutCol1 {
+    margin-bottom: 30px;
+}
+
+.aboutLinks {
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.contactLeft, .contactRight {
+    flex-basis: 100%;
+}}
