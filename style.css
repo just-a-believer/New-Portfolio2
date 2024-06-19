@@ -8,7 +8,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background:black;
+    background: black;
     color: whitesmoke;
 }
 
@@ -33,12 +33,12 @@ nav ul li a {
 }
 
 nav ul li a::after {
-    content:'';
+    content: '';
     width: 0%;
     height: 3px;
     background: lightskyblue;
     position: absolute;
-    left: 0;   
+    left: 0;
     bottom: -6px;
     transition: 0.5s;
 }
@@ -47,19 +47,19 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
- .headerText {
+.headerText {
     margin-top: 20%;
     font-size: 1.5rem;
- }
+}
 
- .headerText h1 {
+.headerText h1 {
     font-size: 2.0rem;
     margin-top: 20px;
- }
+}
 
- .headerText h1 span {
+.headerText h1 span {
     color: lightskyblue;
- }
+}
 
 .logo {
     width: 25%;
@@ -81,6 +81,7 @@ nav ul li a:hover::after {
     background-repeat: no-repeat;
     background-attachment:fixed*/
 }
+
 /*---------------ABOUT ME---------------*/
 
 .row {
@@ -96,11 +97,11 @@ nav ul li a:hover::after {
 }
 
 .aboutCol1 img {
-    width: 190%;
+    width: 100%;
     height: 100%;
 }
 
-.aboutCol2{
+.aboutCol2 {
     flex-basis: 60%;
 }
 
@@ -139,7 +140,7 @@ nav ul li a:hover::after {
     width: 50%;
 }
 
-.tabContent ul li{
+.tabContent ul li {
     list-style: none;
     margin: 10px 0;
 }
@@ -165,6 +166,7 @@ nav ul li a:hover::after {
     padding: 80px 0;
     margin-top: 180px;
 }
+
 /*---------------MY SERVICES---------------*/
 
 .servicesHeading {
@@ -218,23 +220,26 @@ nav ul li a:hover::after {
 #myServices {
     padding: 30px 0;
 }
+
 /*---------------MY PORTFOLIO---------------*/
 
 .portfolioHeading {
     font-size: 2.5rem;
 }
+
 .workList {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
     margin-top: 50px;
 }
+
 .work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    }
-    
+}
+
 .work img {
     width: 100%;
     border-radius: 10px;
@@ -245,7 +250,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), lightskyblue);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), lightskyblue);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -279,7 +284,7 @@ nav ul li a:hover::after {
 }
 
 .work:hover img {
-    transform:scale(1.1) ;
+    transform: scale(1.1);
 }
 
 .work:hover .layer {
@@ -298,7 +303,7 @@ nav ul li a:hover::after {
     transition: background 0.5s;
 }
 
-.workButton:hover{
+.workButton:hover {
     background: lightskyblue;
 }
 
@@ -309,8 +314,10 @@ nav ul li a:hover::after {
 #myPortfolio {
     padding: 50px 0;
 }
+
 /*---------------Contact Me---------------*/
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
@@ -394,69 +401,73 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 600px) {
+
     /*#header {
 
     }*/
-.logo {
-    width: 75%;
-}
+    .logo {
+        width: 75%;
+    }
 
 
-.headerText {
-    margin-top: 100%;
-    font-size: 16px;
-}
+    .headerText {
+        margin-top: 100%;
+        font-size: 16px;
+    }
 
-.headerText h1 {
-    font-size: 30px;
-}
+    .headerText h1 {
+        font-size: 30px;
+    }
 
-nav .fa-solid {
-    display: block;
-    font-size: 25px;
-}
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
 
-/*nav .fa-solid.fa-bars {
+    /*nav .fa-solid.fa-bars {
     float: right;
 }*/
 
-nav ul {
-    background: lightskyblue;
-    position: fixed;
-    top: 0;
-    right: -230px;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: 2;
-    transition: right 0.5s;
-}
+    nav ul {
+        background: lightskyblue;
+        position: fixed;
+        top: 0;
+        right: -230px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
 
-nav ul li {
-    display: block;
-    margin: 25px;
-}
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
 
-nav ul .fa-solid {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-}
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
 
-.aboutCol1, .aboutCol2 {
-    flex-basis: 100%;
-}
+    .aboutCol1,
+    .aboutCol2 {
+        flex-basis: 100%;
+    }
 
-.aboutCol1 {
-    margin-bottom: 30px;
-}
+    .aboutCol1 {
+        margin-bottom: 30px;
+    }
 
-.aboutLinks {
-    font-size: 16px;
-    margin-right: 20px;
-}
+    .aboutLinks {
+        font-size: 16px;
+        margin-right: 20px;
+    }
 
-.contactLeft, .contactRight {
-    flex-basis: 100%;
-}}
+    .contactLeft,
+    .contactRight {
+        flex-basis: 100%;
+    }
+}
